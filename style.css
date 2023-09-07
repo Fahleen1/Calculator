@@ -1,0 +1,100 @@
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Background*/
+.container{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+
+/*Calculator*/
+.calculator{
+    padding: 50px;
+}
+.input{
+    max-width: 500px;
+    min-height: 500px;
+    padding: 50px 2px 20px 100px;
+    margin: 0 auto;
+    background-color:rgba(128, 0, 128, 0.411);
+    border-radius: 35px;
+}
+input[type=text]{
+    padding: 20px;
+    width: 70%;
+    border-radius: 25px;
+    border: none;
+}
+
+button{
+    padding: 25px;
+    width: 100%;
+    border-radius: 60%;
+    border: none;
+    cursor: pointer;
+}
+
+/*Calculator Body*/
+.row{
+    display: flex;
+    padding: 10px 2px 2px 2px;
+}
+.col{
+    padding: 5px;
+}
+input[type=button]
+{
+    padding: 20px;
+    border-radius: 60%;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    background-color: aliceblue;
+    font-size: 1.2em;
+    color: rgb(48, 46, 46);
+}
+.operator{
+    font-size: 1.2em;
+    color: rgb(48, 46, 46);
+    background-color: rgba(224, 155, 178, 0.897);
+}
+.clear{
+    font-size: 1.2em;
+    color: rgb(48, 46, 46);
+    background-color: rgb(219, 97, 219);
+}
+.btn:hover{
+    background-color: #f76b8a;
+}
+.operator:hover{
+    background-color: #edb1f1;
+}
+
+/*Responsive CSS */
+@media screen and (max-width:390px){
+    .input{
+        padding: 30px 2px 2px 70px;
+    }
+    input[type=text]{
+        padding: 15px;
+        width: 70%;
+        border-radius: 25px;
+        border: none;
+    }
+    
+    button{
+        padding: 10px;
+        width: 100%;
+    }
+       
+}
